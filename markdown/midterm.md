@@ -1,0 +1,25 @@
+# Midterm
+
+## CSCI - C437 | _Brandon Young_
+
+### Question
+
+You have been invited to interview for the job of Chief of Security at Jill's Internet Service Provider, a company with a 20,000 square foot building in Galena, IN. Jill is giving you one hour to present a security vision for her ISP. Please type your strategy in the space below, starting with the risk management process. Make sure you consider all covered topics in Chapters 1-6. Simply identifying a security vision is insufficient; how will you also implement and verify that vision? You have 2 hours to complete this vision so please be thorough and detail-oriented.
+
+### Presentation
+
+As an ISP you will need to have a direction and goal before anything else. We need to define what is an acceptable level of risk for the system. As an ISP, the system must be relatively more risk intolerant than other systems, as we are not only handling the data of our own company, but also the data of those trusting us to direct their data to the correct servers. This will involve intuitive and easy systems to access the data, while also maintaining the highest level of security that would not affect that ease of use. While we want to maintain an easy to use system, a significant amount of identification and verification will be needed. Encryption is also going to be highly valuable to us. We want to build trust with our users and one way we con do that is by heavily utilizing encryption in such a way tha all the data is secure and even hidden from us to the greatest extent possible. We will need to integrate our digital security with our physical security.
+
+We must start with the attitude, by creating and housing all the servers and data in need-based access with an additional multi-factor authentication such as an iris scan, we could help prevent some unwarranted acces to consumer data and systems. However we must also train employees and guards to closely monitor these entrances and notify a security representative if anything suspicious happens. Any concractors must have direct authorization from the security team to be on the premises. While these processes are heavy at times, the security of customer's data ought to be our top priority.
+
+In addition to the physical element, we would want to encrypt everything both on our servers as well as what we are routing from a request. Aside from routing data or metadata that is necessary for pricing metrics, any data should be in some kind of hash if it touches one of our servers for any amount of time. We should implement a SHA based hash as they are efficient and effective, while still secure. Any user data would be then unable for us to see. If the data is en route to another destination server, however, that ip would be sent along with the body of the data, and a hash of the ip to ensure that the destination has not been tampered with. The size of the packets may also be reported for data usage monitoring for the user. However this would be the size of the unencrypted data, not the final package. All this information would be directly available to an authenticated IP or user. We would utilize a multi-factor authentication system, utilizing a have and being factor, rather than a knowledge factor. This would allow identified networks to access any data we have on that specific IP.
+
+In addition we would have network security for data in motion. This would primarily use asynchronus cryptography to allow for us to require secured connections. A system could be implemented that allowed each router to process its own keys, thus allowing for a secured connection to all sites in a non-intrusive way.
+
+These processes would remove alot of responsibility from us and allow us to devote our computing power to faster packet routing and providing a better service to the customer. In addition, these would grant us some level of abstraction from whatever users are doing on the system. Thus we are not liable for the legality or illegality of the user's traffic.
+
+We would, however, consistently implement monitoring and auditing on the encrypted data to ensure that it has not been tamprered with or reused in an illegitimate way. We would implement a system of automated audits coupled with a human review and inspection to ensure that all systems are secure and within code. This would include a physical scan of the server rooms as well as a software probe of the hashes of the encrypted data. This would allow us to verify the data has not changed without seeing the actual raw data. We could also implement consistent virtual and physical pen testing in order to ensure the long-term security of our systems. The feedback we recieve would then be implemented into new processes or physical hardware.
+
+All of these processes would then be followed up on every 5 years to evaluate what the long-term revisions would need to be and what systems need to be changed to maintain security. This would also be a time to review wether we achieved our goal of security for our users.
+
+All of the practical elements would help us to achieve our goal of a profitable and trustworthy ISP that can keep security central.
